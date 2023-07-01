@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.connect4.Connect4GUIController">
+  <center>
+    <GridPane fx:id="boardPane" alignment="center" hgap="10" vgap="10">
+      <!-- Placeholders for the board slots -->
+    </GridPane>
+  </center>
+  <bottom>
+    <Button fx:id="resetButton" text="Reset" onAction="#resetGame" />
+  </bottom>
+  <top>
+    <Label fx:id="currentPlayerLabel" />
+  </top>
+</BorderPane>
